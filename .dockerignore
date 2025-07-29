@@ -1,0 +1,7 @@
+﻿node_modules
+.git
+.env
+*.log
+README.md
+test.js
+railway.json
