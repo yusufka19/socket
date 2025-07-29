@@ -1,0 +1,14 @@
+﻿version: 2
+services:
+  - type: web
+    name: socket-football-game
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+    healthCheckPath: /health
